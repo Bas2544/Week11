@@ -22,3 +22,4 @@ exports.addProduct = async (req,res)=>{
     console.log(req.body.name);
     res.send(" id: " + req.body.id + "," + " name: " + req.body.name);
 };
+

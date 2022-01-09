@@ -13,9 +13,10 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}));
 
+const employeeRoute = require('./routes/employeeRoute');
 const productRoute = require('./routes/productRoute');
 app.use("/product", productRoute);
-
+app.use("/employee", employeeRoute);
 //router
 // app.get("/",(req, res)=>{
 //     res.send("Hello from index");
